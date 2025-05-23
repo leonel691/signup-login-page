@@ -17,33 +17,107 @@ body{
 }
 .form-container{
     width: 150rem;
+    /* position: absolute; */
     height: 75rem;
+    display:grid;
     background-color: white;
-    overflow: hidden;
-    padding: 2px 3px;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows:1fr 5fr ;
 }
-.decoration{
-    border-radius: 50%;
+
+/* gerons ici tout ce qui concerne la navbar */
+.form-container-nav{
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    padding:0rem 10rem;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    grid-column: 1 / span 2;
+}
+.form-container-nav-logo_onglets{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+/* .form-container-nav-logo_onglets-logo{
+
+} */
+ .form-container-nav-logo_onglets-onglets{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+ }
+.onglets{
+    text-decoration: none;
+    color: #026789;
+
+}
+.bouton{
+    background-color: #026789;
+    padding: 1.2rem 5rem;
+    border:none;
+    border-radius: 3rem;
+     position: relative;
+    z-index: 8;
+}
+.bouton-visite{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+/* gerons ici tout le formulaire */
+.form-container-form{    
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-container-form-container{
+    width: 50%;
+    height: 60%;
+    background-color: red;
+
+}
+
+.form-container-decoration{    
+    background-color: white;
+    width: 100%;
+    height: 120%;
+    overflow: hidden;
     position: relative;
-    top:-15%;
-    left:50%; 
+    top:-12.5rem;
+    z-index: 4;
+}
+.circle1{
+    position:relative;
+    border-radius: 50%;
+    top:-16%;
+    left:5%; 
     width: 100rem;
     height: 100rem;
     background-color: #c7ece4;
-    z-index: 1;
+    
 }
-.decoration2{
-     border-radius: 50%;
-    position: relative;
+.circle2{
+    position:relative;
     top:5%;
     left:10%; 
     width: 90rem;
     height: 90rem;
     background-color: #9adcd0;
-
+    border-radius: 50%;
+    
+    
 }
-.decoration3{
-     border-radius: 50%;
+.circle3{
+    border-radius: 50%;
     position: relative;
     top:5%;
     left:15%; 
@@ -51,3 +125,9 @@ body{
     height: 80rem;
     background-color: #72cebf;
 }
+.circle3-img{
+    position:relative;
+    bottom: -20%;
+    left: -35%;
+}
+
