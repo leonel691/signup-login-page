@@ -80,12 +80,147 @@ body{
     justify-content: center;
 }
 .form-container-form-container{
-    width: 50%;
-    height: 60%;
-    background-color: red;
-
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+.signup_signin{
+    display:flex;
+    align-items: center;
+    gap: 10rem;
+    justify-content: center;
+}
+.signin{
+    display: inline;
+    text-align: center;
+    padding: 0.5rem 3rem;
+    color: #026789;
+    font-size: 2rem;
+    font-weight: 800;
+    border-bottom:solid #026789 0.3rem; 
+}
+.signup{
+    display: inline;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    /* color: #026789; */
+    color: rgba(128, 128, 128, 0.5);
+    font-size: 2rem;
+    font-weight: 800;
+    border-bottom:solid rgba(128, 128, 128, 0.5) 0.3rem; 
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3rem;
+}
+.login-form-email{
+    display:flex;
+    align-items: center;
+    background-color: white;
+    padding:1rem 2rem;
+    gap: 2rem;
+    box-shadow: -2px 2px 7px 0px rgba(2,103,137,0.3);
+    border-radius: 10rem;
+    width: 80%;
+}
+.icons-border{
+    border-radius: 50%;
+    border:red solid 0.1rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+input{
+    outline: none;
+    /* background-color: #026789; */
+    border:none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color:gray;
+    width: 80%;
 }
 
+.login-form-forgot{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.forgot{
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: rgba(2,103,137);
+}
+.login-form-forgot > button{
+    background-color: #39bda7;
+    border-radius: 2rem;
+    border:none;
+    padding: 1rem 4rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* gerons ici tout ce qui concerne la decoration */
 .form-container-decoration{    
     background-color: white;
     width: 100%;
