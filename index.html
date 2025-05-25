@@ -1,37 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head lang="fr">
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>formulaire test</title>
         <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="/home/menelas/jquery/dist/jquery.js"></script>    
     </head>
     <body>
         <header>
             <div class="logo">+</div>
             <nav>
                 <a href="#">Home</a>
-                <a href="#">Our products</a>
+                <a href="#">Our Product</a>
                 <a href="#">About US</a>
                 <a href="#">Contact US</a>
             </nav>
-            <button class="help-btn">Help</button>
+            <button class="Help-button">Help</button>
         </header>
         <main>
-            <section class="login">
-                <div>
-                    <span class="activate">login</span>
-                    <span>sign up</span>
+            <section id="login-form">
+                <div class="tabs">
+                    <span id="login-tabs" class="activate">Login</span>
+                    <span id="signup-tabs" class="desactivate">Sign UP</span>
                 </div>
                 <form>
-                    <input type="email,number" placeholder="enter your Email or number" required>
-                    <input type="password" placeholder="enter your password" required>
-                    <a href="#">Forgot password?</a>
-                    <button type="submit">login</button>
-                </form>      
+                    <input type="text" placeholder="entrer votre email ou votre numéro de téléphonne">
+                    <input type="password" placeholder="entrer votre mot de passe">
+                    <a href="#">forgot password ?</a>
+                    <button type="submit">Login</button>
+                </form>
+            </section>
+            <section id="signup" class="hidden">
+                <div class="tabs">
+                    <span id="login-tabs" class="activate">Login</span>
+                    <span id="signup-tabs" class="desactivate">Sign UP</span>
+                </div>
+                <form>
+                    <input type="text" placeholder="entrer votre UserName">
+                    <input type="emil" placeholder="entrer votre email">
+                    <input type="number" placeholder="entrer votre numero">
+                    <input type="password" placeholder="entrer votre mot de passe">
+                    <input type="password" placeholder="confirmer votre mot de passe">
+                    <button type="submit">Sign UP</button>
+                </form>
             </section>
             <section class="illustration">
-                <img src="htpps://i.imugr.com/NkNjzrx.png" alt="Laptop illustration"/>
+                <img src="/home/menelas/site_test/photo.png" alt="laptop-illustration"/>
             </section>
-        </main>  
+        </main>
+        <script src=script.js></script>
+        <script src=change.js></script>
     </body>
 </html>
